@@ -1,12 +1,12 @@
 import styles from "../styles/Register.module.css";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { useDispatch, useSelector } from "react-redux";
-import { signup, checkAuthenticated } from "../redux/actions/authActions";
-import { useEffect, useState } from "react";
+import { useDispatch } from "react-redux";
+import { signup } from "../redux/actions/authActions";
+import { useState } from "react";
 import { useAuth } from "../hooks/useAuth";
 
-const register = () => {
+const Register = () => {
 	const dispatch = useDispatch();
 	const router = useRouter();
 	// const { isAuthenticated } = useSelector((state) => state.auth);
@@ -16,10 +16,6 @@ const register = () => {
 		username: "",
 		password: "",
 	});
-
-	// useEffect(() => {
-// 	dispatch(checkAuthenticated());
-	// }, []);
 
 	// useEffect(() => {
 	// 	if (isAuthenticated) {
@@ -114,4 +110,4 @@ const register = () => {
 	);
 };
 
-export default register;
+export default Register;
