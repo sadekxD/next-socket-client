@@ -37,7 +37,7 @@ const Register = () => {
 		router.push("/");
 		return (
 			<div className={styles.container}>
-				<h1>Redirecting to "/"</h1>
+				<h1>Redirecting to {`"/"`}</h1>
 			</div>
 		);
 	}
