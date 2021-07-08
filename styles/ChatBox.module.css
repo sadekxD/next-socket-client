@@ -1,0 +1,11 @@
+.messagesBox {
+	min-height: 500px;
+	height: 500px;
+}
+
+@media screen and (max-width: 768px) {
+	.messagesBox {
+		min-height: 400px;
+		height: 400px;
+	}
+}
